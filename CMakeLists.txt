@@ -41,6 +41,7 @@ add_message_files(
   FILES
   EntityState.msg
   EntityStateStamped.msg
+  FieldState.msg
   GamePeriod.msg
   GameState.msg
   Quadrant.msg
