@@ -1,0 +1,9 @@
+# Request to place a team
+
+RobotPlacement[] placements
+
+---
+
+# Response if the team was placed
+
+bool placed
