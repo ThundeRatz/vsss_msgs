@@ -76,11 +76,26 @@ generate_messages(
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES vsss_msgs
+  INCLUDE_DIRS include
+  LIBRARIES vsss_msgs
   CATKIN_DEPENDS
     std_msgs
     geometry_msgs
     message_runtime
 #  DEPENDS system_lib
+)
+
+###########
+## Build ##
+###########
+
+## Specify additional locations of header files
+## Your package locations should be listed before other locations
+include_directories(
+  include
+  ${catkin_INCLUDE_DIRS}
+)
+
+add_library(${PROJECT_NAME}
+  src/lib/referee_utils.cpp
 )
