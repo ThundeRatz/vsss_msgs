@@ -99,3 +99,6 @@ include_directories(
 add_library(${PROJECT_NAME}
   src/lib/referee_utils.cpp
 )
+
+## Add cmake target dependencies of the library
+add_dependencies(${PROJECT_NAME} ${${PROJECT_NAME}_EXPORTED_TARGETS})
