@@ -9,7 +9,6 @@ find_package(catkin REQUIRED COMPONENTS
   std_msgs
   geometry_msgs
   message_generation
-  thundervolt_msgs
 )
 
 ################################################
@@ -50,6 +49,7 @@ add_message_files(
   RefereeStamped.msg
   RobotPlacement.msg
   TeamSide.msg
+  Twist2D.msg
 )
 
 ## Generate services in the 'srv' folder
@@ -63,7 +63,6 @@ generate_messages(
   DEPENDENCIES
     std_msgs
     geometry_msgs
-    thundervolt_msgs
 )
 
 ###################################
